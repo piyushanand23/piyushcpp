@@ -1,0 +1,127 @@
+#include<iostream>
+/*PRN- 22070123081
+EXP NO 1*/
+using namespace std;
+int main()
+{
+    long int prn, result;
+    prn =  22070123081;
+    for (int i = 0; i<5 ; i++)
+    {
+        result = prn % 10;
+        prn = prn / 10;
+        cout << result << "\n";
+    }    
+        
+    return 0;
+}
+/*
+output:
+/tmp/gh2OdW6ZOH.o
+1
+8
+0
+3
+2
+*/
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    float marks1, marks2,marks3, marks4, marks5, average;
+    cout << "Enter your marks in english: "<<endl;
+    cin >> marks1;
+    
+    cout << "Enter your marks in CPPDS: "<<endl;
+    cin >> marks2;
+    
+    cout << "Enter your marks in art: "<<endl;
+    cin >> marks3;
+    
+    cout << "Enter your marks in science: "<<endl;
+    cin >> marks4;
+    
+    cout << "Enter your marks in hindi: "<<endl;
+    cin >> marks5;
+    average =  (marks1+marks2+marks3+marks4+marks5)/5;
+
+    if (average <= 100 && average > 90){
+        cout << "Grade: 0"<< endl;
+    }
+    else if (average <= 90 && average> 85){
+        cout << "grade: A+"<< endl;
+    }
+    else if (average <= 85 && average> 75){
+        cout << "grade: A"<< endl;
+    }
+    else if (average <= 75 && average> 65){
+        cout << "grade: B+"<< endl;
+    }
+    else if (average <= 65 && average> 55){
+        cout << "grade: B"<< endl;
+    }
+    else if (average <= 55 && average> 40){
+        cout << "grade: C"<< endl;
+    }
+    else {
+        cout << "grade: Fail"<< endl;
+    }
+    return 0;
+    }
+
+/*output
+/tmp/lVa48aZrmN.o
+Enter your marks in english: 
+85
+Enter your marks in CPPDS: 
+69
+Enter your marks in art: 
+93
+Enter your marks in science: 
+98
+Enter your marks in hindi: 
+99
+grade: A+
+*/
+
+
+
+
+
+
+#include<iostream>
+
+using namespace std;
+int main()
+{
+    int n1 , n2;
+    cout<<"ENTER THE FIRST NUMBER : ";
+    cin>>n1;
+    cout<<"ENTER THE SECOND NUMBER : ";
+    cin>>n2;
+    cout<<"ADDITION = "<<n1+n2<<endl;
+    cout<<"SUBTRACTION = "<<n1-n2<<endl;
+    bool com = n1 > n2;
+    cout<<"COMPARISION = "<<com<<endl;
+    int band = n1 & n2;
+    cout<<"BITWISE AND = "<<band<<endl;
+    int bor = n1 | n2;
+    cout<<"BITWISE OR = "<<bor<<endl;
+    return 0;
+}
+/*output
+/tmp/Er5WwtDX41.o
+ENTER THE FIRST NUMBER : 23
+ENTER THE SECOND NUMBER : 19
+ADDITION = 42
+SUBTRACTION = 4
+COMPARISION = 1
+BITWISE AND = 19
+BITWISE OR = 23
+/
