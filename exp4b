@@ -1,0 +1,21 @@
+//22070123081
+#include<iostream>
+using namespace std;
+
+int main() {
+    int no, l_shift, r_shift;
+    no = 67;
+    l_shift = no << 3;
+    r_shift = no >> 4;
+
+    cout << "after left shift:" << l_shift << endl;
+    cout << "after right shift:"<< r_shift << endl;
+}
+
+
+/*
+output:
+after left shift:536
+after right shift:4
+PS D:\22070123081-B1> 
+*/
