@@ -1,0 +1,29 @@
+//22070123081
+#include<iostream>
+using namespace std;
+
+int main() {
+    int number, bit_to_be_set, bit_to_be_reset, set_number, reset_number ;
+    number = 15;
+    cout << "type the bit to be set:" << endl;
+    cin >> bit_to_be_set;
+    cout << "type the bit to be reset:" << endl;
+    cin >> bit_to_be_reset;
+    set_number = number | (1 << bit_to_be_set);
+    reset_number = number & (1 << bit_to_be_reset);
+    cout <<"set: "<< set_number << endl;
+    cout <<"reset: "<< reset_number << endl;
+    }
+
+
+    /* 
+    output:
+    type the bit to be set:
+5
+type the bit to be reset:
+4
+set: 47
+reset: 0
+    
+
+    */
