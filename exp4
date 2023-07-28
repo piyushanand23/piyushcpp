@@ -1,0 +1,22 @@
+//22070123081
+#include<iostream>
+using namespace std;
+
+int main() {
+    int given, set, reset, set_ans, reset_ans;
+    given = 35;
+    set = 16;
+    reset = 31;
+    set_ans = given | set;
+    reset_ans = given & reset;
+    cout << "set: " << set_ans << endl;
+    cout << "reset: "<< reset_ans << endl;
+}
+
+
+/*
+output:
+after left shift:536
+after right shift:4
+PS D:\22070123081-B1> 
+*/
