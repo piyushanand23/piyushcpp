@@ -1,0 +1,15 @@
+//22070123081
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int marks[10]=
+    {55,60,40,70,80,90,20,25,45,30},i;
+       for(i=0; i<=10; i++)
+       {
+        cout<<marks[i]<<endl;
+       }
+       return 0;
+
+}
