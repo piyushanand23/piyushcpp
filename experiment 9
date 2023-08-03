@@ -1,0 +1,55 @@
+/*
+PRN - 22070123081
+
+C++ program to create user inputted array and printing it.
+
+*/
+
+# include <iostream>
+using namespace std;
+
+int main() {
+    int marks[10];
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "Enter mark " << i+1 << ": ";
+        cin >> marks[i];
+
+    }
+    cout << "\n\nThe Marks are -" << "\n\n";
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "Mark" << i+1 << ": ";
+        cout << marks[i] << endl;
+    }
+
+
+    return 0;
+}
+/*
+Output:
+Enter mark 1: 56
+Enter mark 2: 98
+Enter mark 3: 63
+Enter mark 4: 54
+Enter mark 5: 56
+Enter mark 6: 78
+Enter mark 7: 95
+Enter mark 8: 62
+Enter mark 9: 12
+Enter mark 10: 54
+
+
+The Marks are -
+
+Mark1: 56
+Mark2: 98
+Mark3: 63
+Mark4: 54
+Mark5: 56
+Mark6: 78
+Mark7: 95
+Mark8: 62
+Mark9: 12
+Mark10: 54
+*/
